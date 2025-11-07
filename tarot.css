@@ -1,0 +1,366 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Epunda Slab", serif;
+    font-size: 15px;
+    
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.interface {
+    max-width: 1280px; /* CORREÇÃO: estava 10px */
+    margin: 0 auto;
+    padding: 0 20px; /* Adicionado para espaçamento nas laterais */
+    width: 100%;
+}
+
+
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    height: 15vh;
+    
+}
+
+
+
+
+header .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header .menu-desktop nav ul {
+    list-style-type: none;
+}
+
+header .menu-desktop nav ul li {
+    display: inline-block;
+    margin: 0 50px;
+    
+}
+
+header .menu-desktop nav ul li a {
+    text-decoration: none;
+    color:  #000000 !important;
+    font-size: 20px;
+}
+
+header .menu-desktop nav ul li a:hover {
+    color: rgb(181, 115, 235) !important;
+    transition: color 0.2s ease-in-out;
+}
+
+header .logo img {
+    max-width: 170px;
+    height: auto;
+    margin-top: 20px;
+}
+
+header .logo img:hover {
+    cursor: pointer;
+}
+
+header .menu-desktop {
+    margin-right: 15%;
+}
+
+section.inicio {
+    height: 100vh;
+    background-image: url(/imagens/tarot.jpg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.inicio .interface {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.inicio .texto-inicio h1 {
+    font-size: 4em;
+    color: rgb(24, 23, 23);
+    display: block;
+    margin: 10px 0;
+    font-weight: 100;
+}
+
+.inicio .texto-inicio h1 span {
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.inicio .texto-inicio p {
+    font-size: 25px;
+    color: rgba(24, 23, 23, 0.925);
+    font-weight: 100;
+    line-height: 1.6;
+    
+}
+
+.inicio .texto-inicio p span {
+    display: block;
+    font-size: 25px;
+    font-weight: 10;
+   
+    
+}
+
+.inicio .decoracao img {
+    max-width: 400px;
+    height: auto;
+    margin-left: 60%;
+    opacity: 0.9;
+}
+
+/* menu principal DROPDOWN */
+header .menu-desktop nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .menu-desktop nav ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0 50px;
+}
+
+header .menu-desktop nav ul li a {
+    display: block;
+    padding: 12px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgba(24, 23, 23, 0.904);
+    text-align: center;
+    transition: color 0.2s ease-in-out;
+}
+
+header .menu-desktop nav ul li a:hover {
+    display: inline-block;
+}
+
+/* dropdown */
+header .menu-desktop nav ul li ul.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-40%);
+    background-color: rgba(240, 248, 255, 0.95);
+    border-radius: 5px;
+    padding: 5px 0;
+    min-width: 180px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    z-index: 99;
+}
+
+/* borda-top decorativa */
+header .menu-desktop nav ul li ul.dropdown::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: rgb(181, 115, 235);
+}
+
+/* itens do dropdown */
+header .menu-desktop nav ul li ul.dropdown li {
+    list-style: none;
+}
+
+/* links do dropdown */
+header .menu-desktop nav ul li ul.dropdown li a {
+    display: block;
+    width: 10vh;
+    padding: 12px 0;
+    text-align: center;
+    color: rgb(95, 93, 93);
+    text-decoration: none;
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+    font-size: 18px;
+}
+
+/* hover do dropdown */
+header .menu-desktop nav ul li ul.dropdown li a:hover {
+    color: rgb(181, 115, 235);
+}
+
+/* mostrar dropdown ao passar o mouse */
+header .menu-desktop nav ul li.lidropdown:hover > ul.dropdown {
+    display: block;
+}
+
+/* Estilo das Vantagens */
+section.vantagens {
+    flex: 1;
+    padding: 80px 0;
+    
+}
+
+.vantagens .itens-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    margin-bottom: 90px;
+    
+    
+}
+
+.vantagens .itens-container .img-itens img {
+    max-width: 400px;
+}
+
+.vantagens .itens-container .txt-itens h3 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    
+}
+
+.itens-container .txt-itens h3 span {
+    font-weight: 200;
+    font-size: 1em;
+    
+}
+
+.itens-container .txt-itens p {
+    font-size: 20px;
+    line-height: 1.6;
+    
+    
+}
+
+
+.vantagens .itens-container .img-itens + .txt-itens {
+    text-align: right;
+}
+
+
+
+
+
+
+/*footer*/
+footer {
+    background-color: rgb(245, 245, 242);
+    margin-top: auto;
+    width: 100%;
+    padding: 20px 0; /* Adicionado para melhor aparência */
+}
+
+footer .interface-footer {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer .interface-footer p {
+    text-align: center;
+    color: rgb(175, 173, 173);
+    margin: 0; /* Removida a margem superior excessiva */
+    padding: 10px 0; /* Ajustado o padding */
+}
+
+
+.inicio .mybutton {
+    margin-top: 60px;
+}
+
+
+.botao {
+
+    width: 30vh;
+    padding: 30px;
+    font-size: 20px;
+    margin-top: 60px;
+    color: rgb(83, 83, 83);
+    border-color: white;
+    font-family: "Source Code Pro", monospace;
+    outline: none;
+    box-shadow: black;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            background-color: aliceblue;
+            text-decoration: none;
+            box-shadow: 0 6px 0 #9acdee;
+}
+
+ .botao:hover{
+            transform: translateY(-2px);
+            box-shadow: 0 2px 2px rgba(167, 118, 212, 0.199);
+                        0 4px 2px rgba(167, 118, 212, 0.199);
+        
+ }
+
+.botao:active {
+            transform: translateY(1px);
+            box-shadow: 0 4px 8px rgba(138, 43, 226, 0.2);
+        }
+
+        .botao:active {
+    transform: translateY(2px);
+    box-shadow: 0 4px 0 #a566e4; /* Ajusta a sombra no clique */
+            
+}
+
+
+header .login-section {
+    position: relative;
+    top: 1vh;
+ left: 100vh;
+  border: 2px solid #ffffff;  
+   border-radius: 8px;   
+    padding: 10px 20px;   
+    background-color: white;
+     display: inline-block;
+}
+
+
+header .login-section:hover {
+    background-color: rgb(247, 242, 242);
+   
+    border: 2px solid rgb(247, 242, 242);
+
+    transition: 
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+   
+}
+
+
+
+header .login-section a {
+    text-decoration: none;
+    color: #000000d7;
+  
+}
+
+
+
