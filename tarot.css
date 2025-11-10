@@ -331,13 +331,14 @@ footer .interface-footer p {
 
 header .login-section {
     position: relative;
-    top: 1vh;
+    top: 5vh;
  left: 100vh;
   border: 2px solid #ffffff;  
-   border-radius: 8px;   
+   border-radius: 20px;   
     padding: 10px 20px;   
     background-color: white;
      display: inline-block;
+      
 }
 
 
@@ -351,6 +352,8 @@ header .login-section:hover {
     border-color 0.2s ease,
     box-shadow 0.2s ease,
     transform 0.2s ease;
+
+
    
 }
 
@@ -364,3 +367,19 @@ header .login-section a {
 
 
 
+header .signin-section {
+    position: relative;
+    top: 4px;
+ left: 110vh;
+  border: 2px solid #ffffff;  
+   border-radius: 20px;   
+    padding: 10px 20px;   
+    background-color: white;
+     display: inline-block;
+}
+
+header .signin-section a {
+    text-decoration: none;
+    color: #000000d7;
+  
+}
