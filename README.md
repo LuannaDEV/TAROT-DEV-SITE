@@ -7,6 +7,7 @@ Este é um projeto pessoal em desenvolvimento. O objetivo é criar um site infor
 ##  Status do Projeto
 
 **Em desenvolvimento**
+ 
  ✅ Estrutura em HTML  
  ✅ Estilização com CSS  
  🔜 Interatividade com JavaScript (Em desenvolvimento)
